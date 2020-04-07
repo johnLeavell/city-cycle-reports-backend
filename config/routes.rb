@@ -7,8 +7,11 @@ Rails.application.routes.draw do
       # only: [:create, :update, :destroy, :show]
       # post '/users/:id/report', :to => 'user#show'
       post "/login", to: "auth#login"
-      get "/auto_login", to: "auth#auto_login"
-      get "/user_is_authed", to: "auth#user_is_authed"
+      get "/login", to: "auth#login"
+      post "/auth", to: "auth#create"
+      
+      # get "/auto_login", to: "auth#auto_login"
+      # get "/user_is_authed", to: "auth#user_is_authed"
     end
   end
 end
