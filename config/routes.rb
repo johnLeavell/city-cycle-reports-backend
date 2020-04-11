@@ -9,7 +9,8 @@ Rails.application.routes.draw do
       post "/login", to: "auth#login"
       get "/login", to: "auth#login"
       post "/auth", to: "auth#create"
-      
+      get '/current_user', to: 'auth#show'
+
       # get "/auto_login", to: "auth#auto_login"
       # get "/user_is_authed", to: "auth#user_is_authed"
     end
