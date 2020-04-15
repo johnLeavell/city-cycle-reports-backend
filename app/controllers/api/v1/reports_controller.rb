@@ -27,7 +27,7 @@ class Api::V1::ReportsController < ApplicationController
 
     def update
       report = Report.find(params[:id])
-      if repor.valid?
+      if report.valid?
         report.update(report_params)
         render json: report
       else

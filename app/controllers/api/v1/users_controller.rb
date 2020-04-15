@@ -20,7 +20,7 @@ class Api::V1::UsersController < ApplicationController
             user.save
             render json: user
         else
-            render json: {message: "User could not be crated"}
+            render json: {message: "User could not be created"}
         end
     end
 
