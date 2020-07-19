@@ -11,3 +11,5 @@ class Api::V1::AuthController < ApplicationController
     def show
     end
   end
+
+
