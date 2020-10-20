@@ -5,14 +5,14 @@ class Api::V1::UsersController < ApplicationController
         render json: users
     end
 
-    def show 
-        user = User.find(params[:id])
-        if user.valid?
-            render json: user
-        else
-            render json: {message: "User could not be found"}
-        end
-    end
+    # def show 
+    #     user = User.find(params[:id])
+    #     if user.valid?
+    #         render json: user
+    #     else
+    #         render json: {message: "User could not be found"}
+    #     end
+    # end
     
     def create
         user = User.create(user_params)
